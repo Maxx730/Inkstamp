@@ -129,10 +129,9 @@ public class InkStampActivity extends AppCompatActivity {
             public void onClick(View view) {
                 layer_down.setVisibility(View.VISIBLE);
                 layer_up.setVisibility(View.GONE);
-
                 CURRENT_LAYER = 2;
+                zoom.setProgress((int) FOREGROUND_SCALE * 100);
                 inkCanvas.invalidate();
-                zoom.setProgress((int) FOREGROUND_SCALE);
                 rotate.setEnabled(true);
                 rotate.setProgress(FOREGROUND_ROTATION);
             }
@@ -143,10 +142,9 @@ public class InkStampActivity extends AppCompatActivity {
             public void onClick(View view) {
                 layer_down.setVisibility(View.GONE);
                 layer_up.setVisibility(View.VISIBLE);
-
                 CURRENT_LAYER = 1;
-                inkCanvas.invalidate();
                 zoom.setProgress((int) BACKGROUND_SCALE * 100);
+                inkCanvas.invalidate();
                 rotate.setEnabled(false);
                 rotate.setProgress(BACKGROUND_ROTATION);
             }
