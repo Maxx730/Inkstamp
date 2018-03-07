@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kinghorn.inkstamp.inkstamp.InkStampActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/InkStampStage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/light_bottom_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/zoom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/icon_zoom" />
+
+                    <SeekBar
+                        android:id="@+id/ZoomScalebar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:max="500"
+                        android:min="100" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rotate_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/icon_rotate" />
+
+                    <SeekBar
+                        android:id="@+id/RotateScalebar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:max="360" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fade_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/icon_fade" />
+
+                    <SeekBar
+                        android:id="@+id/FeatherScalebar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_light">
+
+                <ImageButton
+                    android:id="@+id/feather_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ui_button"
+                    app:srcCompat="@drawable/icon_fade" />
+
+                <ImageButton
+                    android:id="@+id/rotate_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ui_button_center"
+                    app:srcCompat="@drawable/icon_rotate" />
+
+                <ImageButton
+                    android:id="@+id/zoom_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ui_button"
+                    app:srcCompat="@drawable/icon_zoom" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/InkStampToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarStyle" />
+
+    <ImageButton
+        android:id="@+id/activityCancel"
+        android:layout_width="60dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/actionbar_ui_button"
+        app:srcCompat="@drawable/icon_close" />
+
+    <ImageButton
+        android:id="@+id/activityConfirm"
+        android:layout_width="60dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/actionbar_ui_button"
+        app:srcCompat="@drawable/icon_check" />
+
+    <ImageButton
+        android:id="@+id/upperLayer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:srcCompat="@drawable/upper_layer" />
+
+    <ImageButton
+        android:id="@+id/lowerLayer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/lower_layer" />
+
+</RelativeLayout>
