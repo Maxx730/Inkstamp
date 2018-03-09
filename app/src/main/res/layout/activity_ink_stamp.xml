@@ -322,6 +322,45 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarStyle" />
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/lowerLayer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="15dp"
+            app:srcCompat="@drawable/lower_layer" />
+
+        <ImageButton
+            android:id="@+id/upperLayer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="false"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="15dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/upper_layer" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="6dp"
+            android:text="Switch Layer"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
     <ImageButton
         android:id="@+id/activityCancel"
         android:layout_width="60dp"
@@ -336,23 +375,5 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@drawable/actionbar_ui_button"
         app:srcCompat="@drawable/icon_check" />
-
-    <ImageButton
-        android:id="@+id/upperLayer"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentEnd="false"
-        android:layout_centerHorizontal="true"
-        android:background="@android:color/transparent"
-        android:visibility="gone"
-        app:srcCompat="@drawable/upper_layer" />
-
-    <ImageButton
-        android:id="@+id/lowerLayer"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_centerHorizontal="true"
-        android:background="@android:color/transparent"
-        app:srcCompat="@drawable/lower_layer" />
 
 </RelativeLayout>

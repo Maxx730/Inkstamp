@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5c5d1b3-4d1c-47c1-a2ed-a9dd0ab4496b" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/InkStamp.iml" afterPath="$PROJECT_DIR$/Inkstamp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
@@ -17,12 +16,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kinghorn/inkstamp/inkstamp/InkStampActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kinghorn/inkstamp/inkstamp/InkStampActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/light_bottom_border.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/light_bottom_border.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ui_button.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ui_button.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ui_button_center.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ui_button_center.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/zoom_in_icon.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/zoom_in_icon.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/zoom_out_icon.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/zoom_out_icon.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ink_stamp.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ink_stamp.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,20 +59,18 @@
             <state relative-caret-position="2925">
               <caret line="313" column="4" lean-forward="false" selection-start-line="313" selection-start-column="4" selection-end-line="313" selection-end-column="4" />
               <folding>
-                <marker date="1520629862000" expanded="true" signature="6469:7448" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="6720:7054" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="7085:7415" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="7480:8499" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="7729:8061" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="8092:8466" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="8555:12304" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="12365:13007" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="13023:13663" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="13704:14124" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="14143:14423" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="14442:14678" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="14697:15038" ph="..." />
-                <marker date="1520629862000" expanded="true" signature="15057:15318" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="6469:7448" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="6720:7054" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="7085:7415" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="7480:8499" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="7729:8061" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="8092:8466" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="8555:12304" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="12365:13007" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="13023:13663" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="13704:14124" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="15596:15876" ph="..." />
+                <marker date="1520630239000" expanded="true" signature="15895:16131" ph="..." />
               </folding>
             </state>
           </provider>
@@ -2080,7 +2071,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520629865430" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520630243404" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2128,7 +2119,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520629865430" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520630243405" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2311,7 +2302,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520629865431" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520630243405" />
       </method>
     </configuration>
     <list size="1">
@@ -2413,20 +2404,18 @@
         <state relative-caret-position="2925">
           <caret line="195" column="4" lean-forward="false" selection-start-line="195" selection-start-column="4" selection-end-line="195" selection-end-column="4" />
           <folding>
-            <marker date="1520629862000" expanded="true" signature="6469:7448" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="6720:7054" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="7085:7415" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="7480:8499" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="7729:8061" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="8092:8466" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="8555:12304" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="12365:13007" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="13023:13663" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="13704:14124" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="14143:14423" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="14442:14678" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="14697:15038" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="15057:15318" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="6469:7448" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="6720:7054" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="7085:7415" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="7480:8499" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="7729:8061" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="8092:8466" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="8555:12304" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="12365:13007" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="13023:13663" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="13704:14124" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="15596:15876" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="15895:16131" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2577,20 +2566,18 @@
         <state relative-caret-position="2925">
           <caret line="313" column="4" lean-forward="false" selection-start-line="313" selection-start-column="4" selection-end-line="313" selection-end-column="4" />
           <folding>
-            <marker date="1520629862000" expanded="true" signature="6469:7448" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="6720:7054" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="7085:7415" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="7480:8499" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="7729:8061" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="8092:8466" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="8555:12304" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="12365:13007" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="13023:13663" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="13704:14124" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="14143:14423" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="14442:14678" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="14697:15038" ph="..." />
-            <marker date="1520629862000" expanded="true" signature="15057:15318" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="6469:7448" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="6720:7054" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="7085:7415" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="7480:8499" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="7729:8061" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="8092:8466" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="8555:12304" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="12365:13007" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="13023:13663" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="13704:14124" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="15596:15876" ph="..." />
+            <marker date="1520630239000" expanded="true" signature="15895:16131" ph="..." />
           </folding>
         </state>
       </provider>
