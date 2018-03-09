@@ -40,7 +40,7 @@ public class InkStampActivity extends AppCompatActivity {
     private float BACKGROUND_SCALE = 1,FOREGROUND_SCALE = 1,SEEKBAR_BSCALE,SEEKBAR_FSCALE,FADE_RADIUS = 200f;
     private View inkCanvas;
     private Bitmap foreground_img,background_img;
-    private Boolean DEBUG = true;
+    private Boolean DEBUG = false;
     private TextView zoom_text,layer_text;
 
     @Override

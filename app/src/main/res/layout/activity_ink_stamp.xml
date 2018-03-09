@@ -16,6 +16,7 @@
             android:id="@+id/InkStampStage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
             android:layout_weight="1"
             android:background="@android:color/black">
 
@@ -31,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/light_bottom_border"
+                android:background="@android:color/background_light"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -44,8 +45,8 @@
                         android:id="@+id/imageView"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:padding="15dp"
+                        android:layout_weight="2"
+                        android:padding="20dp"
                         app:srcCompat="@drawable/icon_zoom" />
 
                     <LinearLayout
@@ -54,21 +55,84 @@
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/ZoomInBtn"
-                            android:layout_width="wrap_content"
+                        <RelativeLayout
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            app:srcCompat="@drawable/zoom_in_icon" />
+                            android:layout_weight="10">
 
-                        <ImageButton
-                            android:id="@+id/ZoomOutBtn"
-                            android:layout_width="wrap_content"
+                            <ImageButton
+                                android:id="@+id/ZoomInBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/zoom_button"
+                                android:paddingBottom="20dp"
+                                app:srcCompat="@drawable/zoom_in_icon" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:paddingBottom="6dp"
+                                android:text="Zoom In"
+                                android:textAlignment="center"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            app:srcCompat="@drawable/zoom_out_icon" />
+                            android:layout_weight="10">
+
+                            <ImageButton
+                                android:id="@+id/ZoomOutBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/zoom_center"
+                                android:paddingBottom="20dp"
+                                app:srcCompat="@drawable/zoom_out_icon" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:paddingBottom="6dp"
+                                android:text="Zoom Out"
+                                android:textAlignment="center"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10">
+
+                            <ImageButton
+                                android:id="@+id/resetButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/zoom_button"
+                                android:paddingBottom="20dp"
+                                app:srcCompat="@drawable/zoom_in_icon" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:paddingBottom="6dp"
+                                android:text="Reset"
+                                android:textAlignment="center"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
                     </LinearLayout>
 
                 </LinearLayout>
@@ -84,7 +148,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="5"
-                        android:padding="15dp"
+                        android:padding="20dp"
                         app:srcCompat="@drawable/icon_rotate" />
 
                     <SeekBar
@@ -108,7 +172,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="5"
-                        android:padding="15dp"
+                        android:padding="20dp"
                         app:srcCompat="@drawable/icon_fade" />
 
                     <SeekBar
@@ -126,32 +190,86 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@android:color/background_light">
+                android:layout_weight="1">
 
-                <ImageButton
-                    android:id="@+id/feather_toggle"
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/ui_button"
-                    app:srcCompat="@drawable/icon_fade" />
+                    android:layout_weight="1">
 
-                <ImageButton
-                    android:id="@+id/rotate_toggle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/ui_button_center"
-                    app:srcCompat="@drawable/icon_rotate" />
+                    <ImageButton
+                        android:id="@+id/zoom_toggle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/ui_button"
+                        android:paddingBottom="20dp"
+                        app:srcCompat="@drawable/icon_zoom" />
 
-                <ImageButton
-                    android:id="@+id/zoom_toggle"
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="6dp"
+                        android:text="Zoom"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/ui_button"
-                    app:srcCompat="@drawable/icon_zoom" />
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/rotate_toggle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/ui_button_center"
+                        android:paddingBottom="20dp"
+                        app:srcCompat="@drawable/icon_rotate" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="6dp"
+                        android:text="Rotate"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/feather_toggle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/ui_button"
+                        android:paddingBottom="20dp"
+                        app:srcCompat="@drawable/icon_fade" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="6dp"
+                        android:text="Fade"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
             </LinearLayout>
         </LinearLayout>
 
